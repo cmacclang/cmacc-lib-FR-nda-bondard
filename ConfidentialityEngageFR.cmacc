@@ -1,0 +1,23 @@
+// Description de l'engagement des parties
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// This section number
+$ xnum = "Xnum"
+
+// Document
+
+{{xnum}}. Chacune des Parties s’engage irrévocablement envers l’autre Partie à assurer la plus stricte et absolue confidentialité au sujet de l’existence et du contenu des Éléments Confidentiels de l’autre Partie, même si celle-ci n’est pas expressément précisée sur lesdits Eléments Confidentiels ou à l’occasion de leur transmission, que ces Éléments Confidentiels émanent directement ou indirectement de l’autre Partie, avec ou sans son autorisation expresse ou implicite, de quelque manière que ce soit, en particulier par la remise d’un support tangible ou par une communication verbale ou de toute autre manière intangible, et que la Partie dépositaire ait conservé ou non les supports qui lui ont éventuellement été remis.
+Cette obligation de confidentialité et de non-divulgation couvre bien évidemment toute discussion de nature privée, mais également les réseaux sociaux ou professionnels, ainsi que tout groupement généralement quelconque, que l’accès audit groupe soit sécurisé ou non, limité ou non.
+
+Cette obligation s’applique aussi, notamment, à toutes créations, informations, dessins, descriptions, secrets de fabrique et de commerce, inventions, procédés, découvertes, formes, logiciels, listes, tableaux, bases de données, formules, prototypes, objets, mécanismes, structures et processus de fabrication, en relation avec les Éléments Confidentiels propres à chaque Partie à quelque titre et de quelque manière que ce soit.
+
+Par ailleurs, les Parties s’engagent à traiter les Eléments Confidentiels de l’autre Partie comme strictement confidentiels et secrets et à ne pas les dévoiler, directement ou indirectement, à qui que ce soit à l’exception du nombre minimum de personnes nécessaire au développement des Evènements, à savoir les personnes qui doivent être informées des Eléments Confidentiels de l’autre Partie pour les buts pour lesquels ils ont été fournis, lesquelles personnes seront liées aux Parties par un accord de confidentialité et de non-divulgation contenant en substance les mêmes obligations que celles découlant de cet Accord.
+Les Parties assumeront la responsabilité du respect de leurs obligations découlant de cet Accord par toutes personnes (employés et cocontractants indépendants compris) ayant actuellement, par le passé ou pour le futur accès aux Eléments Confidentiels de l’autre Partie par leur intermédiaire.
+
+Chaque Partie appliquera le même degré de soin à préserver la confidentialité des Eléments Confidentiels de l’autre Partie que celui qu’elle réserve à préserver ses propres Eléments Confidentiels, ce degré de soin devant en tout état de cause être raisonnable. Elle devra également sécuriser son système informatique en y apportant un degré de soin raisonnable.

@@ -1,0 +1,19 @@
+// Definition de la jurisdiction
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// This section number
+$ xnum = "Xnum"
+
+$ confid_Jurisdiction = "confid_Jurisdiction"
+
+$ confid_Law = "confid_Law"
+
+// Document
+
+{{xnum}}. Cet Accord est entièrement soumis {{confid_Law}}. Tous litiges entre parties relèvent de la compétence exclusive {{confid_Jurisdiction}}.

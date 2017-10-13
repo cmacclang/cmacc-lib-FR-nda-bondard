@@ -1,0 +1,15 @@
+// Clause de no reverse-engineering
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parametres
+
+// This section number
+$ xnum = "Xnum"
+
+// Document
+
+{{xnum}}. Sans que ce qui suit ne soit exhaustif, les Parties s’interdisent de (faire) divulguer, déballer, démonter, déstructurer, analyser, altérer, modifier ou endommager, de quelque manière et par qui que ce soit, les supports tangibles comprenant les Éléments Confidentiels.  Elles s’interdisent aussi de (faire) effacer, masquer, gratter, omettre, par un quelconque procédé, tout ou partie des mentions apposées par une Partie sur ces supports. Toute violation, temporaire ou définitive, de tout ou partie des obligations d‘une Partie donnera notamment lieu à l’indemnisation des préjudices subis par l’autre Partie (préjudices moral et matériel – damnum emergens et lucrum cessans compris) et entraînera en tout état de cause l’obligation de restituer sans délai à l’autre Partie tous les supports et autres éléments faisant partie des Eléments Confidentiels de cette Partie qui seraient entre les mains de l’autre Partie (ou de ceux dont elle répond).

@@ -1,0 +1,25 @@
+// Exceptions faites aux limites de l'accord
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// This section number
+$ xnum = "Xnum"
+
+$ limits_Xnum = "limits_Xnum"
+
+// Document
+
+{{xnum}}. Sous réserve de l’application de l'article {{limits_Xnum}}.2 qui prévaut sur les exceptions citées ci-après, le présent Accord n‘interdit à aucune des Parties d’utiliser ou divulguer des informations qui :
+
+- Étaient en sa possession ou connues d’elle et à sa libre disposition avant d’être divulguées par l’autre Partie, pour autant que cette connaissance ou possession résulte d’un écrit déjà détenu par elle au moment de la signature de cet Accord;
+
+- Etaient publiques sans faute, action ou omission de sa part ;
+
+- Sont devenues publiques subséquemment, sans faute, action ou omission de sa part;
+
+- Sont entrées en sa possession ou sont devenues connues d’elle par le biais d’un tiers n’ayant pas violé d’obligation de confidentialité en les lui communiquant.

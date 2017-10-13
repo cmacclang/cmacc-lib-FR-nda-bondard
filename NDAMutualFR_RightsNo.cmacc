@@ -1,0 +1,126 @@
+// NDA Mutuel, pas de droits specifiques octroyes
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// Description of Party1
+
+$ party1_Handle = "party1_Handle"
+
+$ party1_Pron = [./_pron_Elle.cmacc]
+
+// Description of Party2
+
+$ party2_Handle = "party2_Handle"
+
+$ party2_Pron = [./_pron_Lui.cmacc]
+
+
+// Signature
+
+$ party1_Sign_Place = "sign_Place"
+
+$ party2_Sign_Place = "sign_Place"
+
+$ sign_Date = "sign_Date"
+
+// end of parameters----------------
+
+
+// Content from other files and related section numbers
+
+$ preambule = [./NDAPreambulePrestataire.cmacc]
+
+$ confid_Xnum = "1"
+
+$ confid_Define = [./ConfidentialityDefinitionFR.cmacc]
+$ confid_Define.xnum = confid_Xnum
+
+$ engage_Xnum = "2"
+
+$ engage = [./ConfidentialityEngageFR.cmacc]
+$ engage.xnum = engage_Xnum
+
+$ limits_Xnum = "3"
+
+$ limits = [./ConfidentialityLimitsFR.cmacc]
+$ limits.xnum = limits_Xnum
+
+$ except_Xnum = "4"
+
+$ confid_Except = [./ConfidentialityExceptFR.cmacc]
+$ confid_Except.xnum = except_Xnum
+$ confid_Except.limits_Xnum = limits_Xnum
+
+$ decompile_Xnum = "5"
+
+$ decompile = [./ConfidentialityDecompileFR.cmacc]
+$ decompile.xnum = decompile_Xnum
+
+$ remedy_Xnum = "6"
+
+$ remedy = [./ConfidentialityRemedyFR.cmacc]
+$ remedy.xnum = remedy_Xnum
+
+$ life_End_Xnum = "7"
+
+$ life_End = [./ConfidentialityLifeEndFR.cmacc]
+$ life_End.xnum = life_End_Xnum
+
+$ intellectual_Property_Xnum = "8"
+
+$ intellectual_Property = [./ConfidentialityIntellectualPropertyFR.cmacc]
+$ intellectual_Property.xnum = intellectual_Property_Xnum
+
+$ rights_Xnum = "9"
+
+$ rights = [./ConfidentialityRightsFR.cmacc]
+$ rights.xnum = rights_Xnum
+
+$ misc_Xnum = "10"
+
+$ misc_Clauses = [./MiscClausesFR.cmacc]
+$ misc_Clauses.xnum = misc_Xnum
+
+$ law_Xnum = "11"
+
+$ law = [./LawFR.cmacc]
+$ law.xnum = law_Xnum
+
+// Document ----------------------------------------
+
+ACCORD DE CONFIDENTIALITÉ ET DE NON DIVULGATION
+
+{{preambule}}
+
+{{confid_Define}}
+
+{{engage}}
+
+{{limits}}
+
+{{confid_Except}}
+
+{{decompile}}
+
+{{remedy}}
+
+{{life_End}}
+
+{{intellectual_Property}}
+
+{{misc_Clauses}}
+
+{{law}}
+
+Fait à {{party1_Sign_Place}} et à {{party2_Sign_Place}}, le {{sign_Date}}
+
+(Nom, prénom, adresse, qualité et signature précédée de la mention manuscrite « lu et approuvé »)
+
+Pour {{party1_Pron.LaLe}} {{party1_Handle}},	
+
+Pour {{party2_Pron.LaLe}} {{party2_Handle}},

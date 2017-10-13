@@ -1,0 +1,26 @@
+// Description de la prestation envisagee
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+$ party1_Handle = "party1_Handle"
+
+$ party1_Pron = [./_pron_Lui.cmacc]
+
+$ party2_Handle = "party2_Handle"
+
+$ party2_Pron = [./_pron_Lui.cmacc]
+
+$ party2_Expertise = "party2_Expertise"
+
+$ work_Scope = "work_Scope"
+
+// Document
+
+{{party2_Pron.LaLe}} {{party2_Handle}} est une société spécialisée dans {{party2_Expertise}}. A ce titre, {{party2_Pron.lale}} {{party2_Handle}} est propriétaire d’informations qui sont de nature confidentielles et qui lui appartiennent en propre (ci-après les « Éléments Confidentiels »).
+
+{{party1_Pron.LaLe}} {{party1_Handle}} envisage de confier {{party2_Pron.alaau}} {{party2_Handle}} {{work_Scope}}; elle est également propriétaire d’informations qui sont de nature confidentielles et qui lui appartiennent en propre (ci-après également les « Éléments Confidentiels »).

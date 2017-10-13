@@ -1,0 +1,15 @@
+// Definition de la confidentialite
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// This section number
+$ xnum = "Xnum"
+
+// Document
+
+{{xnum}}. Par Eléments Confidentiels, il faut entendre, de manière strictement illustrative et non-exhaustive : toutes informations relatives à des missions ou commandes, telles que notamment les missions, les projets, les noms des clients, la mise au point de l’événement, de l’étude de faisabilité, des phases de création, de pré-production, production, post-production et d’organisation des Evènements, les moodboards, les croquis, les plans, les dessins, les photographies, les maquettes, les références à du mobilier (en ce compris ses forme, dimensions, couleur, structure, composition, origine, etc.), éléments de décoration au sens le plus large, la structure de financement, les partenariats, les technologies utilisées et développées, les informations concernant les approvisionnements, les offres, les produits, les fournisseurs, les accords de distribution, la tarification et structure des prix, la structure des coûts, les études (entamées et/ou terminées), la stratégie marketing et ses diversifications possibles, ainsi que de manière générale, toute information ou secret de nature confidentielle lié de quelque manière que ce soit aux Evènements.

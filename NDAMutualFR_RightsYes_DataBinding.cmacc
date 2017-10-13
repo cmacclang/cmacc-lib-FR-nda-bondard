@@ -1,0 +1,108 @@
+// Exemple de Data Binding pour le NDA mutuel avec des droits sur les Creations et Materials
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// Description of Party1
+
+$ party1_Full_Name = "party1_Full_Name"
+
+$ party1_Legal_Form = "party1_Legal_Form"
+
+$ party1_Jurisdiction_Origin = "party1_Jurisdiction_Origin"
+
+$ party1_Address_1Line = "party1_Address_1Line"
+
+$ party1_Tax_ID = "party1_Tax_ID"
+
+$ party1_Rep_Name = "party1_Rep_Name"
+
+$ party1_Rep_Title = "party1_Rep_Title"
+
+$ party1_Handle = "party1_Handle"
+
+$ party1_Pron = [./_pron_Elle.cmacc]
+
+// Description of Party2
+
+$ party2_Full_Name = "party2_Full_Name"
+
+$ party2_Legal_Form = "party2_Legal_Form"
+
+$ party2_Jurisdiction_Origin = "party2_Jurisdiction_Origin"
+
+$ party2_Address_1Line = "party2_Address_1Line"
+
+$ party2_Tax_ID = "party2_Tax_ID"
+
+$ party2_Rep_Name = "party2_Rep_Name"
+
+$ party2_Rep_Title = "party2_Rep_Title"
+
+$ party2_Handle = "party2_Handle"
+
+$ party2_Pron = [./_pron_Lui.cmacc]
+
+$ party2_Expertise = "party2_Expertise"
+
+// Description of the work
+
+$ work_Scope = "work_Scope"
+
+$ work_Creations = "work_Creations"
+
+$ work_Materials = "work_Materials"
+
+$ work_Activities = "work_Activities"
+
+$ confid_Duration = "test_confid_Duration"
+
+$ confid_Law = "test_confid_Law"
+
+$ confid_Jurisdiction = "test_confid_Jurisdiction"
+
+// Signature
+
+$ party1_Sign_Place = "sign_Place"
+
+$ party2_Sign_Place = "sign_Place"
+
+$ sign_Date = "sign_Date"
+
+
+// Template utilisé
+
+$ content = [./NDAMutualFR_RightsYes.cmacc]
+
+$ preambule = content.preambule
+$ preambule.party1_Handle = party1_Handle
+$ preambule.party1_Pron = party1_Pron
+$ preambule.party2_Handle = party2_Handle
+$ preambule.party2_Pron = party2_Pron
+$ preambule.work_Activities = work_Activities
+$ preambule.objet_Accord.party1_Handle = party1_Handle
+$ preambule.objet_Accord.party1_Pron = party1_Pron
+$ preambule.objet_Accord.party2_Handle = party2_Handle
+$ preambule.objet_Accord.party2_Pron = party2_Pron
+$ preambule.objet_Accord.party2_Expertise = party2_Expertise
+$ preambule.objet_Accord.work_Scope = work_Scope
+
+
+$ limits = content.limits
+$ limits.confid_Duration = confid_Duration
+
+$ rights = content.rights
+$ rights.work_Creations = work_Creations
+$ rights.work_Materials = work_Materials
+
+$ law = content.law
+$ law.confid_Jurisdiction = confid_Jurisdiction
+$ law.confid_Law = confid_Law
+    
+// Document
+
+{{content}}

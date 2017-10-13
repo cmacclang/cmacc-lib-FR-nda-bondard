@@ -1,0 +1,50 @@
+// Preambulaire d'un accord societe-prestataire
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// Party 1
+
+$ party1_Handle = "party1_Handle"
+
+$ party1_Pron = [./_pron_Elle.cmacc]
+
+// Party 2
+
+$ party2_Handle = "party2_Handle"
+
+$ party2_Pron = [./_pron_Lui.cmacc]
+
+
+// Description de la prestation
+
+$ work_Activities = "work_Activities"
+
+
+// Fichiers appeles
+
+$ party1_Full_Description = [./_companie_FullDescription.cmacc]
+
+$ party2_Full_Description = [./_companie_FullDescription.cmacc]
+
+$ objet_Accord = [./ObjetPrestation.cmacc]
+
+// Document
+
+ENTRE :
+
+{{party1_Full_Description}} (ci-après {{party1_Pron.lale}} {{party1_Handle}}) ;
+
+ET :
+
+{{party2_Full_Description}} (ci-après {{party2_Pron.lale}} {{party2_Handle}}) ;
+
+{{party1_Pron.LaLe}} {{party1_Handle}} et {{party2_Pron.lale}} {{party2_Handle}} seront conjointement dénommées les « Parties » ou séparément la « Partie ».
+
+{{objet_Accord}}
+
+Le présent document (ci-après « l’Accord ») a pour objet de conserver le caractère confidentiel des éléments communiqués par chacune des Parties, sans exclusivité, à l’autre Partie à l’occasion de {{work_Activities}}.

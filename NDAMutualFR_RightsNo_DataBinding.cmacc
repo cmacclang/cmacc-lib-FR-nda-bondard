@@ -1,0 +1,107 @@
+// Exemple de Data Binding pour le NDAMutual sans droits specifiques octroyes
+
+// --- Credits ---
+// Original text from Cabinet Bondard
+// Adapted to Cmacc format by Marc Dangeard
+// ---------------
+
+// Parameters
+
+// Description of Party1
+
+$ party1_Full_Name = "... entrez le nom de la partie 1..."
+
+$ party1_Legal_Form = "...entrez la forme juridique de la partie 1..."
+
+$ party1_Jurisdiction_Origin = "...entrez la juridiction d'origine de la partie 1..."
+
+$ party1_Address_1Line = "...entrez l'adresse de la partie 1..."
+
+$ party1_Tax_ID = "...entrez le SIREN de la partie 1..."
+
+$ party1_Rep_Name = "...entrez le nom du representant de la partie 1..."
+
+$ party1_Rep_Title = "...entrez le titre du representant de la partie 1..."
+
+$ party1_Handle = "...entrez le handle de la partie 1..."
+
+$ party1_Pron = [./_pron_Elle.cmacc]
+
+// Description of Party2
+
+$ party2_Full_Name = "... entrez le nom de la partie 2..."
+
+$ party2_Legal_Form = "...entrez la forme juridique de la partie 2..."
+
+$ party2_Jurisdiction_Origin = "...entrez la juridiction d'origine de la partie 2..."
+
+$ party2_Address_1Line = "...entrez l'adresse de la partie 2..."
+
+$ party2_Tax_ID = "...entrez le SIREN de la partie 2..."
+
+$ party2_Rep_Name = "...entrez le nom du representant de la partie 2..."
+
+$ party2_Rep_Title = "...entrez le titre du representant de la partie 2..."
+
+$ party2_Handle = "...entrez le handle de la partie 2..."
+
+$ party2_Pron = [./_pron_Lui.cmacc]
+
+$ party2_Expertise = "...entrez l'expertise de la partie 2..."
+
+// Description of the work
+
+$ work_Activities = "work_Activities"
+
+$ work_Scope = "work_Scope"
+
+
+
+
+$ work_Creations = "work_Creations"
+
+$ work_Materials = "work_Materials"
+
+$ confid_Duration = "test_confid_Duration"
+
+$ confid_Law = "test_confid_Law"
+
+$ confid_Jurisdiction = "test_confid_Jurisdiction"
+
+// Signature
+
+$ party1_Sign_Place = "sign_Place"
+
+$ party2_Sign_Place = "sign_Place"
+
+$ sign_Date = "sign_Date"
+
+
+// Template utilisé
+
+$ content = [./NDAMutualFR_RightsNo.cmacc]
+
+$ preambule = content.preambule
+$ preambule.party1_Handle = party1_Handle
+$ preambule.party1_Pron = party1_Pron
+$ preambule.party2_Handle = party2_Handle
+$ preambule.party2_Pron = party2_Pron
+$ preambule.work_Activities = work_Activities
+$ preambule.objet_Accord.party1_Handle = party1_Handle
+$ preambule.objet_Accord.party1_Pron = party1_Pron
+$ preambule.objet_Accord.party2_Handle = party2_Handle
+$ preambule.objet_Accord.party2_Pron = party2_Pron
+$ preambule.objet_Accord.party2_Expertise = party2_Expertise
+$ preambule.objet_Accord.work_Scope = work_Scope
+
+
+$ limits = content.limits
+$ limits.confid_Duration = confid_Duration
+
+$ law = content.law
+$ law.confid_Jurisdiction = confid_Jurisdiction
+$ law.confid_Law = confid_Law
+    
+// Document
+
+{{content}}

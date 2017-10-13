@@ -1,0 +1,19 @@
+// Parametres
+
+$ party_Full_Name = "party_Full_Name"
+
+$ party_Legal_Form = "party_Legal_Form"
+
+$ party_Jurisdiction_Origin = "party_Jurisdiction_Origin"
+
+$ party_Address_1Line = "party_Address_1Line"
+
+$ party_Tax_ID = "party_Tax_ID"
+
+$ party_Rep_Name = "party_Rep_Name"
+
+$ party_Rep_Title = "party_Rep_Title"
+
+// Document
+
+{{party_Full_Name}}, une société {{party_Legal_Form}} de droit {{party_Jurisdiction_Origin}}, ayant son siège social {{party_Address_1Line}}, numéro de TVA intracommunautaire No {{party_Tax_ID}}, représentée à l’effet et pour les besoins des présentes par {{party_Rep_Name}} intervenant en sa qualité de {{party_Rep_Title}}
