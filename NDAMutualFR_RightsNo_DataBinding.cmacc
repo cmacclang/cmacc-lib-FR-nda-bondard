@@ -51,35 +51,44 @@ $ party2_Expertise = "...entrez l'expertise de la partie 2..."
 
 // Description of the work
 
-$ work_Activities = "work_Activities"
+$ work_Activities = "...entrez les work activities..."
 
-$ work_Scope = "work_Scope"
+$ work_Scope = "...entrez le scope..."
 
+$ confid_Duration = "...entrez la duree de la periode de confidentialite..."
 
+$ confid_Law = "...entrez la loi de reference pour l'accord..."
 
-
-$ work_Creations = "work_Creations"
-
-$ work_Materials = "work_Materials"
-
-$ confid_Duration = "test_confid_Duration"
-
-$ confid_Law = "test_confid_Law"
-
-$ confid_Jurisdiction = "test_confid_Jurisdiction"
+$ confid_Jurisdiction = "...entrez la juridiction de l'accord..."
 
 // Signature
 
-$ party1_Sign_Place = "sign_Place"
+$ party1_Sign_Place = "...entrez le lieu de signature pour la partie 1..."
 
-$ party2_Sign_Place = "sign_Place"
+$ party2_Sign_Place = "...entrez le lieu de signature pour la partie 2..."
 
-$ sign_Date = "sign_Date"
+$ sign_Date = "...entrez la date de la signature..."
 
 
-// Template utilisé
+// Template utilisé - data binding
 
 $ content = [./NDAMutualFR_RightsNo.cmacc]
+
+$ content.preambule.party1_Full_Description.party_Full_Name = party1_Full_Name
+$ content.preambule.party1_Full_Description.party_Legal_Form = party1_Legal_Form
+$ content.preambule.party1_Full_Description.party_Jurisdiction_Origin = party1_Jurisdiction_Origin
+$ content.preambule.party1_Full_Description.party_Address_1Line = party1_Address_1Line
+$ content.preambule.party1_Full_Description.party_Tax_ID = party1_Tax_ID
+$ content.preambule.party1_Full_Description.party_Rep_Name = party1_Rep_Name
+$ content.preambule.party1_Full_Description.party_Rep_Title = party1_Rep_Title
+
+$ content.preambule.party2_Full_Description.party_Full_Name = party2_Full_Name
+$ content.preambule.party2_Full_Description.party_Legal_Form = party2_Legal_Form
+$ content.preambule.party2_Full_Description.party_Jurisdiction_Origin = party2_Jurisdiction_Origin
+$ content.preambule.party2_Full_Description.party_Address_1Line = party2_Address_1Line
+$ content.preambule.party2_Full_Description.party_Tax_ID = party2_Tax_ID
+$ content.preambule.party2_Full_Description.party_Rep_Name = party2_Rep_Name
+$ content.preambule.party2_Full_Description.party_Rep_Title = party2_Rep_Title
 
 $ preambule = content.preambule
 $ preambule.party1_Handle = party1_Handle
@@ -101,7 +110,13 @@ $ limits.confid_Duration = confid_Duration
 $ law = content.law
 $ law.confid_Jurisdiction = confid_Jurisdiction
 $ law.confid_Law = confid_Law
-    
+
+$ content.party1_Handle = party1_Handle
+$ content.party2_Handle = party2_Handle
+$ content.party1_Sign_Place = party1_Sign_Place
+$ content.party2_Sign_Place = party2_Sign_Place
+$ content.sign_Date = sign_Date
+
 // Document
 
 {{content}}
