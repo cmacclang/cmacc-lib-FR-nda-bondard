@@ -1,9 +1,10 @@
 {
-  "name": "cmacc-form-bondard-nda-fr",
-  "version": "1.1.2",
+  "name": "cmacc-lib-fr-nda-bondard",
+  "version": "2.0.0",
   "main": "index.js",
-  "repository": "https://github.com/cmacclang/cmacc-form-bondard-nda-fr.git",
+  "repository": "https://github.com/cmacclang/cmacc-lib-fr-nda-bondard.git",
   "author": "Marc Dangeard <marc@dangeard.com>",
   "license": "MIT",
-  "flat": true
+  "flat": true,
+  "description": "nda en francais"
 }
