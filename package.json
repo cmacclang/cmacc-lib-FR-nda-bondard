@@ -1,6 +1,6 @@
 {
   "name": "cmacc-lib-fr-nda-bondard",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "index.js",
   "repository": "https://github.com/cmacclang/cmacc-lib-fr-nda-bondard.git",
   "author": "Marc Dangeard <marc@dangeard.com>",
