@@ -1,122 +1,243 @@
 // Exemple de Data Binding pour le NDAMutual sans droits specifiques octroyes
 
+
+
 // --- Credits ---
+
 // Original text from Cabinet Bondard
+
 // Adapted to Cmacc format by Marc Dangeard
+
 // ---------------
+
+
 
 // Parameters
 
+
+
 // Description of Party1
+
+
 
 $ party1_Full_Name = "... entrez le nom de la partie 1..."
 
+
+
 $ party1_Legal_Form = "...entrez la forme juridique de la partie 1..."
+
+
 
 $ party1_Jurisdiction_Origin = "...entrez la juridiction d'origine de la partie 1..."
 
+
+
 $ party1_Address_1Line = "...entrez l'adresse de la partie 1..."
+
+
 
 $ party1_Tax_ID = "...entrez le SIREN de la partie 1..."
 
+
+
 $ party1_Rep_Name = "...entrez le nom du representant de la partie 1..."
+
+
 
 $ party1_Rep_Title = "...entrez le titre du representant de la partie 1..."
 
+
+
 $ party1_Handle = "...entrez le handle de la partie 1..."
+
+
 
 $ party1_Pron = [./_pron_Elle.cmacc]
 
+
+
 // Description of Party2
+
+
 
 $ party2_Full_Name = "... entrez le nom de la partie 2..."
 
+
+
 $ party2_Legal_Form = "...entrez la forme juridique de la partie 2..."
+
+
 
 $ party2_Jurisdiction_Origin = "...entrez la juridiction d'origine de la partie 2..."
 
+
+
 $ party2_Address_1Line = "...entrez l'adresse de la partie 2..."
+
+
 
 $ party2_Tax_ID = "...entrez le SIREN de la partie 2..."
 
+
+
 $ party2_Rep_Name = "...entrez le nom du representant de la partie 2..."
+
+
 
 $ party2_Rep_Title = "...entrez le titre du representant de la partie 2..."
 
+
+
 $ party2_Handle = "...entrez le handle de la partie 2..."
+
+
 
 $ party2_Pron = [./_pron_Lui.cmacc]
 
+
+
 $ party2_Expertise = "...entrez l'expertise de la partie 2..."
+
+
 
 // Description of the work
 
+
+
 $ work_Activities = "...entrez les work activities..."
+
+
 
 $ work_Scope = "...entrez le scope..."
 
+
+
 $ confid_Duration = "...entrez la duree de la periode de confidentialite..."
+
+
 
 $ confid_Law = "...entrez la loi de reference pour l'accord..."
 
+
+
 $ confid_Jurisdiction = "...entrez la juridiction de l'accord..."
+
+
 
 // Signature
 
+
+
 $ party1_Sign_Place = "...entrez le lieu de signature pour la partie 1..."
 
+
+
 $ party2_Sign_Place = "...entrez le lieu de signature pour la partie 2..."
+
+
 
 $ sign_Date = "...entrez la date de la signature..."
 
 
+
+
+
 // Template utilisé - data binding
+
+
 
 $ content = [./NDAMutualFR_RightsNo.cmacc]
 
-$ content.preambule.party1_Full_Description.party_Full_Name = party1_Full_Name
-$ content.preambule.party1_Full_Description.party_Legal_Form = party1_Legal_Form
-$ content.preambule.party1_Full_Description.party_Jurisdiction_Origin = party1_Jurisdiction_Origin
-$ content.preambule.party1_Full_Description.party_Address_1Line = party1_Address_1Line
+
+
+$ content.preambule.party1_Full_Description.party_Full_Name = 'Cmacc Transact'
+
+$ content.preambule.party1_Full_Description.party_Legal_Form = 'SAS'
+
+$ content.preambule.party1_Full_Description.party_Jurisdiction_Origin = 'français'
+
+$ content.preambule.party1_Full_Description.party_Address_1Line = '10 rue de Penthièvre, 75008 Paris'
+
 $ content.preambule.party1_Full_Description.party_Tax_ID = party1_Tax_ID
-$ content.preambule.party1_Full_Description.party_Rep_Name = party1_Rep_Name
-$ content.preambule.party1_Full_Description.party_Rep_Title = party1_Rep_Title
+
+$ content.preambule.party1_Full_Description.party_Rep_Name = 'Marc Dangeard'
+
+$ content.preambule.party1_Full_Description.party_Rep_Title = 'président'
+
+
 
 $ content.preambule.party2_Full_Description.party_Full_Name = party2_Full_Name
+
 $ content.preambule.party2_Full_Description.party_Legal_Form = party2_Legal_Form
+
 $ content.preambule.party2_Full_Description.party_Jurisdiction_Origin = party2_Jurisdiction_Origin
+
 $ content.preambule.party2_Full_Description.party_Address_1Line = party2_Address_1Line
+
 $ content.preambule.party2_Full_Description.party_Tax_ID = party2_Tax_ID
+
 $ content.preambule.party2_Full_Description.party_Rep_Name = party2_Rep_Name
+
 $ content.preambule.party2_Full_Description.party_Rep_Title = party2_Rep_Title
 
+
+
 $ preambule = content.preambule
+
 $ preambule.party1_Handle = party1_Handle
+
 $ preambule.party1_Pron = party1_Pron
+
 $ preambule.party2_Handle = party2_Handle
+
 $ preambule.party2_Pron = party2_Pron
+
 $ preambule.work_Activities = work_Activities
+
 $ preambule.objet_Accord.party1_Handle = party1_Handle
+
 $ preambule.objet_Accord.party1_Pron = party1_Pron
+
 $ preambule.objet_Accord.party2_Handle = party2_Handle
+
 $ preambule.objet_Accord.party2_Pron = party2_Pron
+
 $ preambule.objet_Accord.party2_Expertise = party2_Expertise
+
 $ preambule.objet_Accord.work_Scope = work_Scope
 
 
+
+
+
 $ limits = content.limits
+
 $ limits.confid_Duration = confid_Duration
 
+
+
 $ law = content.law
+
 $ law.confid_Jurisdiction = confid_Jurisdiction
+
 $ law.confid_Law = confid_Law
 
+
+
 $ content.party1_Handle = party1_Handle
+
 $ content.party2_Handle = party2_Handle
+
 $ content.party1_Sign_Place = party1_Sign_Place
+
 $ content.party2_Sign_Place = party2_Sign_Place
+
 $ content.sign_Date = sign_Date
 
+
+
 // Document
+
+$ content.preambule.party1_Handle = 'Société'
 
 {{content}}
