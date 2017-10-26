@@ -74,8 +74,8 @@ $ sign_Date = "...entrez la date de la signature..."
 
 $ content = [./NDAMutualFR_RightsNo.cmacc]
 
-$ content.preambule.party1_Full_Description.party_Full_Name = party1_Full_Name
-$ content.preambule.party1_Full_Description.party_Legal_Form = party1_Legal_Form
+$ content.preambule.party1_Full_Description.party_Full_Name = 'Cmacc Transact'
+$ content.preambule.party1_Full_Description.party_Legal_Form = 'SAS'
 $ content.preambule.party1_Full_Description.party_Jurisdiction_Origin = party1_Jurisdiction_Origin
 $ content.preambule.party1_Full_Description.party_Address_1Line = party1_Address_1Line
 $ content.preambule.party1_Full_Description.party_Tax_ID = party1_Tax_ID
